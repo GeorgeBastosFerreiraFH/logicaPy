@@ -63,17 +63,32 @@ while limite < contador:
     print(contador)
 print("Feliz ano novo!")
 
-# Atividade 05 - não consegui fazer a parte de só exibir os números impares!
+# Atividade 05
 
 limite = int(input('Digite um numero: '))
-contador = 0
+contador = 1
 
-while contador < limite:
-    contador += 1
-    resultado = 
-    print(resultado)
+while contador <= limite:
+    print(contador)
+    contador += 2
 
-# Atividade 07 - não consegui fazer a parte de só mostrar os números multiplos de 3
+# Atividade 06
+
+soma = 0
+numero = None
+
+while True:
+    numero = int(input('Digite números a ser somados: '))
+    if numero >= 0:
+        soma += numero
+    elif numero < 0:
+        print(f'A soma de todos os número digitados é {soma}.')
+        break
+    else:
+        print('Você digitou o numero zero')
+    
+
+# Atividade 07
 
 numero = int(input('Digite um numero: '))
 contador = 0
@@ -81,5 +96,17 @@ contador = 0
 while contador < 10:
     contador += 1
     resultado = contador * numero
-    if 
+    if resultado % 3 == 0:
         print(f'{numero} x {contador} = {resultado}')
+
+# Atividade 08
+
+notas = None
+quantidade_notas = 0
+soma = 0
+
+while True:
+    notas = int(input('Digite suas notas. (para sair digite -1): '))
+    if notas >= 0: 
+        soma += notas
+        print(notas)

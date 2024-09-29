@@ -1,28 +1,3 @@
-senha = ''
-while senha != '12345':
-    senha = input('Digite a senha: ')
-    if senha == '12345':
-        print('Acesso concedido!')
-    else:
-        print('Senha incorreta, tente novamente.')
-
-opcao = ''
-
-while opcao != '3':
-    print('Menu:')
-    print('1. Opção 1')
-    print('2. Opção 2')
-    print('3. Opção para sair do programa')
-    opcao = input('Escolha uma opção: ')
-    if opcao == '1':
-        print('Você escolheu a opção 1.')
-    elif opcao == '2':
-        print('Você escolheu a opção 2.')
-    elif opcao == '3':
-        print('Encerrando o programa')
-    else:
-        print('Opção inválida, tente novamente!')
-
 ###########################################################################
 
 # Atividade 01
@@ -110,3 +85,51 @@ while True:
     if notas >= 0: 
         soma += notas
         print(notas)
+        
+
+# Atividade 09
+
+contador = 1
+soma = 0
+
+while True:
+    soma += contador
+    print(f'Número {soma}')
+    if soma == 10:
+        break
+
+# Atividade 10
+
+soma = 0
+contador = 1
+
+while soma < 50:
+    soma += contador
+    contador += 1
+
+print(f"A soma dos números consecutivos é {soma}.")
+
+# Atividade 11
+
+numero = None
+
+while True:
+    numero = int(input('Digite um número de 1 a 10: '))
+    if numero <= 0:
+        print(f'Você digitou {numero}, por favor digite um número entre 1 a 10.')
+    elif numero > 10:
+        print(f'Você digitou {numero}, por favor digite um número entre 1 a 10.')
+    else:
+        print(f'Você digitou {numero}, é um número valido.')
+        break
+
+# Atividade 12
+
+senha = ''
+
+while senha != '1234':
+    senha = input('Digite a senha: ')
+    if senha == '1234':
+        print('Acesso concedido!')
+    else:
+        print('Senha incorreta, tente novamente.')
